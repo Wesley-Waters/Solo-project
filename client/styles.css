@@ -1,3 +1,93 @@
 body {
   background-color: dodgerblue;
+  margin: 0;
+  padding: 0;
+}
+
+/* First page styling */
+#header {
+  font-size: 4em;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+}
+
+#header h1 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+#welcomeBox {
+  border: solid white 1px;
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+#welcomeBox div {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.5em;
+}
+
+#welcomeBox p {
+  margin: 0 0.5em;
+}
+
+#welcomeBox button {
+  color: white;
+  background-color: black;
+  font-size: 0.7em;
+  border: lightblue solid 1px;
+  margin: 0 0.5em;
+}
+
+#yesButton:hover {
+  background-color: green;
+  cursor: pointer;;
+}
+
+#noButton:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+/* Styling for random dog picture component */
+#dogPics {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#dogPics img {
+  width: 30%;
+  height: auto;
+}
+
+/* Styline for joblisting page */
+#joblisting {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 3em 0;
+}
+
+/* Div of each job post */
+.jobDiv {
+  margin-left: 2em;
+  border: solid white 1px;
+  color: white;
+  font-size: 0.7em;
+}
+
+/* Styling for each job posting */
+.jobTitle {
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
 }
