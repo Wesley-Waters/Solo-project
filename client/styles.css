@@ -65,29 +65,155 @@ body {
 }
 
 #dogPics img {
-  width: 30%;
+  width: 40%;
   height: auto;
 }
 
 /* Styline for joblisting page */
+
+#container {
+  display: grid;
+  grid-template-columns: minmax(250px, 1fr) minmax(250px, 1fr) minmax(250px, 1fr);
+  grid-column-gap: 1em;
+  position: relative;
+}
 #joblisting {
   color: white;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 3em 0;
+  z-index: 1;
 }
 
 /* Div of each job post */
 .jobDiv {
-  margin-left: 2em;
+  padding-left: 1em;
   border: solid white 1px;
   color: white;
-  font-size: 0.7em;
+  font-size: 1em;
+  width: 80%;
+}
+
+.jobDiv div {
+  position: relative;
+  padding: 0 1em;
+}
+
+.moneyLink {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: white;
+}
+
+.moneyLink:hover {
+  color: green;
+  cursor: pointer;
 }
 
 /* Styling for each job posting */
 .jobTitle {
+  font-weight: bold;
+  font-size: 2em;
+  text-align: left;
+  color: white;
+}
+
+.jobTitle:hover {
+  color: black;
+  cursor: pointer;
+}
+
+#jobSearchBar {
+  margin: 1em 0;
+  color:white;
+  font-size: 3em;
+  border: 1px solid white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#jobSearchBar input, button {
+  margin: 0.5em;
+  height: 2em;
+}
+
+#jobSearchBar button {
+  cursor: pointer;
+}
+
+/* No results found header */
+h2 {
+  font-weight: bold;
+  font-size: 5em;
+  color: white;
+}
+
+/* Styling for job details div */
+#jobDetails {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 30%;
+  overflow-y: scroll;
+}
+
+#jobDetails h2 {
+  justify-content: center;
+  align-items: center;
+}
+
+#details {
+  border: solid white 1px;
+  width: 80%;
+}
+
+#details p {
+  margin-left: 0.5em;
+  font-size: 1.2em;
+  line-height: 1.2em;
+}
+
+/* Styling for quick apply div */
+#quickApply {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 30%;
+  overflow-y: scroll;
+}
+
+#quickApply h2 {
+  justify-content: center;
+  align-items: center;
+}
+
+#applyDetails {
+  border: solid white 1px;
+  width: 80%;
+}
+
+#applyDetails p {
+  margin-left: 0.5em;
+  font-size: 1.2em;
+  line-height: 1.2em;
+}
+
+.applyHere {
   color: white;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 2em;
+  cursor: pointer;
 }
